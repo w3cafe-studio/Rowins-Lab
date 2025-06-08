@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowins Lab - Wellness Health Checkups Right at Your Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="keywords" content="Rowins Diagnostics Ganapathy, Reviews, Contact number, Phone number, Address, Map, Rowins Diagnostics Coimbatore, Ratings, Directions, Official website link, Working hours, Services, Diagnostic Centres, Blood Testing Centres, X Ray Mobile Services, Blood Test Home Visit, Thyroid Testing Laboratory, Diagnostic Centres in Saravanampatti Coimbatore, Pathology Centres Coimbatore, Diagnostic Laboratories in Saravanampatti, Best Diagnostic Centres in Saravanampatti, Diagnostic Centres India, Accurex sphera, Immunology Analyzers, Accurex Sphera Laboratory Analyzer, Biomerieux Mini Vidas, Urine Test Services, Aids Diagnostic Centres, Coimbatore">
+    <meta name="description" content="Welcome to Rowins Diagnostics, your trusted partner in healthcare for over 10 years. We specialize in CBC Test, Thyroid Profile Test, and Mobile X-Ray services. Providing accurate, reliable results with state-of-the-art equipment and skilled professionals. Choose Rowins Diagnostics for high-quality diagnostic services you can trust.">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">Rowins Lab</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-blue-600 font-medium">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600">Services</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-blue-600">Reviews</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars text-gray-600 text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <a href="index.html" class="block py-2 text-blue-600 font-medium">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="#reviews" class="block py-2 text-gray-600 hover:text-blue-600">Reviews</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+                <a href="tel:+919843290040" class="block bg-blue-600 text-white px-4 py-2 rounded-full text-center my-2 hover:bg-blue-700 transition">Call Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-50 py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Rowins Lab</h1>
+                    <h2 class="text-2xl md:text-3xl text-blue-600 mb-6">Wellness Health Checkups Right at Your Home</h2>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Current Offers</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Full Body Check Profile 1 (62 Parameters) Only <span class="font-bold">@₹1,999/-</span></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Full Body Check Profile 2 (69 Parameters) Only <span class="font-bold">@₹2,999/-</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-center mb-6">Get an Appointment</h3>
+                        <form id="appointmentForm">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="name">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="email">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="service">Service Required</label>
+                                <select id="service" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="full-body-1">Full Body Check Profile 1</option>
+                                    <option value="full-body-2">Full Body Check Profile 2</option>
+                                    <option value="cbc">CBC Test</option>
+                                    <option value="thyroid">Thyroid Profile Test</option>
+                                    <option value="xray">Mobile X-Ray</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 mb-2" for="date">Preferred Date</label>
+                                <input type="date" id="date" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Us</h2>
+            <div class="max-w-3xl mx-auto"></div>
+                <p class="text-lg text-gray-700 mb-6">
+                    Welcome to Rowins Diagnostics, your trusted partner in healthcare for over 10 years. As a leading diagnostic clinic, we are committed to delivering accurate and reliable test results to support your health and well-being.
+                </p>
+                <p class="text-lg text-gray-700 mb-6">
+                    At Rowins Diagnostics, we specialize in a range of essential diagnostic services, including:
+                </p>
+                <ul class="space-y-3 mb-6">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                        <span>CBC (Complete Blood Count) Test</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                        <span>Thyroid Profile Test</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                        <span>Mobile X – Ray</span>
+                    </li>
+                </ul>
+                <p class="text-lg text-gray-700 mb-6">
+                    Our mission is to provide you with precise and timely results, empowering you and your healthcare provider to make informed decisions about your health.
+                </p>
+                <p class="text-lg text-gray-700">
+                    Over the years, we've built a reputation for excellence, thanks to our state-of-the-art equipment, skilled professionals, and a strong focus on patient care. We strive to create a welcoming environment where your health is our priority.
+                </p>
+                <p class="text-lg font-semibold text-blue-600 mt-6">
+                    "Choose Rowins Diagnostics for dependable, high-quality diagnostic services you can trust."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">CBC Test</h3>
+                    <p class="text-gray-600">
+                        A Complete Blood Count (CBC) test is a common blood test used to assess overall health and detect a wide range of disorders, such as anemia, infection, and leukemia.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Thyroid Profile Test</h3>
+                    <p class="text-gray-600">
+                        A thyroid profile test measures the levels of thyroid hormones in the blood, including Thyroxine (T4), Triiodothyronine (T3), and Thyroid-Stimulating Hormone (TSH).
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Bedside X-Ray</h3>
+                    <p class="text-gray-600">
+                        This type of X-ray uses a portable machine that can be brought directly to the patient's bed, providing a convenient and quick way to obtain diagnostic imaging without needing the patient to leave their bed.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="services.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Happy Stories</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Rowins Lab provided excellent service when I needed a home CBC test. The technician was professional and punctual, and I received my results quickly. Highly recommended!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Rajesh Kumar</h4>
+                            <p class="text-sm text-gray-500">Patient since 2019</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "The mobile X-ray service was a lifesaver for my elderly father who couldn't travel to a clinic. The equipment was modern and the staff was very caring. Great experience overall."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Priya Sharma</h4>
+                            <p class="text-sm text-gray-500">Patient since 2020</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "I've been using Rowins Lab for all my thyroid tests for years. Their pricing is transparent, results are accurate, and the home collection service saves me so much time. Excellent diagnostic center!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Anil Patel</h4>
+                            <p class="text-sm text-gray-500">Patient since 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-blue-50 p-8 rounded-lg text-center">
+                <h3 class="text-2xl font-semibold mb-4">Review Us On Google</h3>
+                <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+                    "Your valuable reviews will help us to improve our services"
+                </p>
+                <a href="https://search.google.com/local/writereview?placeid=..." target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                    <i class="fab fa-google mr-2"></i> Write a Review
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Wellness Health Checkups Right at Your Home</h2>
+            <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">Book Your Checkup Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-semibold mb-6">Get in Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-blue-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Phone</h4>
+                                    <a href="tel:+919843290040" class="text-gray-600 hover:text-blue-600">+91 98432 90040</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-blue-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Email</h4>
+                                    <a href="mailto:info@rowinslab.com" class="text-gray-600 hover:text-blue-600">info@rowinslab.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-blue-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Working Hours</h4>
+                                    <p class="text-gray-600">Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                                    <p class="text-gray-600">Sunday: 9:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-semibold mb-6">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="contact-name">Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="contact-email">Email</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="contact-phone">Phone</label>
+                                <input type="tel" id="contact-phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="contact-message">Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1234567890123!2d78.12345678901234!3d11.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x501d3cb6d01a2e0f!2sROWIN'S%20DIAGNOSTICS!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">Rowins Lab</h3>
+                    <p class="text-gray-400 max-w-xs">
+                        Wellness Health Checkups Right at Your Home. Trusted diagnostic services for over 10 years.
+                    </p>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white">Reviews</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">CBC Test</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Thyroid Profile</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Mobile X-Ray</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Full Body Checkup</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-blue-400"></i>
+                            <a href="tel:+919843290040" class="text-gray-400 hover:text-white">+91 98432 90040</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            <a href="mailto:info@rowinslab.com" class="text-gray-400 hover:text-white">info@rowinslab.com</a>
+                        </li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="footer-year"></span> Rowins Lab. All rights reserved.</p>
+            </div>
+            <script>
+                document.getElementById('footer-year').textContent = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+
+    <!-- Services Page -->
+    <div id="services-page" class="hidden">
+        <div class="container mx-auto px-6 py-16">
+            <h1 class="text-4xl font-bold text-center mb-12">Our Services</h1>
+            
+            <!-- Diagnostic Services -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold mb-8 border-b pb-2">Diagnostic Services</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">CBC Test</h3>
+                        <p class="text-gray-600 mb-4">
+                            A Complete Blood Count (CBC) test is a common blood test used to assess overall health and detect a wide range of disorders, such as anemia, infection, and leukemia.
+                        </p>
+                        <div class="text-blue-600 font-medium">Starting from ₹499</div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Thyroid Profile Test</h3>
+                        <p class="text-gray-600 mb-4">
+                            A thyroid profile test measures the levels of thyroid hormones in the blood, including Thyroxine (T4), Triiodothyronine (T3), and Thyroid-Stimulating Hormone (TSH).
+                        </p>
+                        <div class="text-blue-600 font-medium">Starting from ₹799</div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Bedside X-Ray</h3>
+                        <p class="text-gray-600 mb-4">
+                            This type of X-ray uses a portable machine that can be brought directly to the patient's bed, providing a convenient and quick way to obtain diagnostic imaging without needing the patient to leave their bed.
+                        </p>
+                        <div class="text-blue-600 font-medium">Starting from ₹1,299</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Health Packages -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold mb-8 border-b pb-2">Health Packages</h2>
+                
+                <!-- Aarogyam Pro -->
+                <div class="mb-12">
+                    <h3 class="text-xl font-semibold mb-6 text-blue-600">Aarogyam Pro Services</h3>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <table class="min-w-full">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-3 px-4 text-left">Package</th>
+                                    <th class="py-3 px-4 text-left">Tests</th>
+                                    <th class="py-3 px-4 text-left">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam Lite with UTSH</td>
+                                    <td class="py-3 px-4">32 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹1,049</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam A Pro with UTSH</td>
+                                    <td class="py-3 px-4">38 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹1,449</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam B Pro with UTSH</td>
+                                    <td class="py-3 px-4">68 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹1,749</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam D Pro with UTSH</td>
+                                    <td class="py-3 px-4">86 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹4,099</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam E Pro with UTSH</td>
+                                    <td class="py-3 px-4">90 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹5,149</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam F Pro with UTSH</td>
+                                    <td class="py-3 px-4">163 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹9,249</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam X Pro with UTSH</td>
+                                    <td class="py-3 px-4">125 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹7,199</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam XL Pro with UTSH</td>
+                                    <td class="py-3 px-4">135 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹8,749</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Aarogyam Plus -->
+                <div class="mb-12">
+                    <h3 class="text-xl font-semibold mb-6 text-blue-600">Aarogyam Plus Services</h3>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <table class="min-w-full">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-3 px-4 text-left">Package</th>
+                                    <th class="py-3 px-4 text-left">Tests</th>
+                                    <th class="py-3 px-4 text-left">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam A Plus Profile with UTSH</td>
+                                    <td class="py-3 px-4">63 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹1,649</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam B Plus Profile with UTSH</td>
+                                    <td class="py-3 px-4">93 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹1,949</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam C Plus Profile with UTSH</td>
+                                    <td class="py-3 px-4">97 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹2,799</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam D Plus Profile with UTSH</td>
+                                    <td class="py-3 px-4">114 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹4,649</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam E Plus Profile with UTSH</td>
+                                    <td class="py-3 px-4">118 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹5,649</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam F Plus Profile with UTSH</td>
+                                    <td class="py-3 px-4">142 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹6,699</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam X Plus Profile with UTSH</td>
+                                    <td class="py-3 px-4">153 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹7,699</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Aarogyam XL Plus Profile with UTSH</td>
+                                    <td class="py-3 px-4">163 Tests</td>
+                                    <td class="py-3 px-4 font-medium">₹9,249</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Full Body Checkup -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-blue-600">Full Body Checkup</h3>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <table class="min-w-full">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-3 px-4 text-left">Package</th>
+                                    <th class="py-3 px-4 text-left">Parameters</th>
+                                    <th class="py-3 px-4 text-left">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 px-4">Full Body Checkup Profile 1</td>
+                                    <td class="py-3 px-4">62 Parameters</td>
+                                    <td class="py-3 px-4 font-medium">₹1,999/-</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Full Body Checkup Profile 2</td>
+                                    <td class="py-3 px-4">69 Parameters</td>
+                                    <td class="py-3 px-4 font-medium">₹2,999/-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">Book Your Test Now</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form submission handling
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your appointment request. We will contact you shortly to confirm.');
+            this.reset();
+        });
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you soon.');
+            this.reset();
+        });
+        
+        // Simple page routing
+        function showPage(page) {
+            if (page === 'services') {
+                document.getElementById('services-page').classList.remove('hidden');
+                document.querySelector('main').classList.add('hidden');
+            } else {
+                document.getElementById('services-page').classList.add('hidden');
+                document.querySelector('main').classList.remove('hidden');
+            }
+        }
+        
+        // Check URL for services page
+        if (window.location.pathname.includes('services.html')) {
+            showPage('services');
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
